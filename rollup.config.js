@@ -4,20 +4,22 @@ import typescript from 'rollup-plugin-typescript2'
 import pkg from './package.json'
 
 export default [
+  // UMD for browser-friendly build
   {
     input: 'src/index.ts',
     output: {
-      name: 'howLongUntilLunch',
+      name: 'eventbus-umd',
       file: pkg.main,
-      format: 'umd',  // for cmd & amd like webpack project or node project
+      format: 'umd', 
     },
     plugins: [resolve(), commonjs(), typescript()],
   },
   {
     input: 'src/index.ts',
     output: {
-      name: 'howLongUntilLunch',
+      name: 'eventbus-esm',
       file: pkg.module, // for es module like <script type="module"> import EventBus from './lib/index.esm.js'</script>
+                                 //  or webpack , cause webpack will find npm package in module field
       format: 'esm',
     },
     plugins: [typescript()],
