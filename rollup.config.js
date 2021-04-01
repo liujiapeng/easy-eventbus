@@ -4,7 +4,6 @@ import typescript from 'rollup-plugin-typescript2'
 import pkg from './package.json'
 
 export default [
-  // UMD for browser-friendly build
   {
     input: 'src/index.ts',
     output: {
@@ -21,6 +20,6 @@ export default [
       file: pkg.module, // for es module like <script type="module"> import EventBus from './lib/index.esm.js'</script>
       format: 'esm',
     },
-    plugins: [resolve(), commonjs(), typescript()],
+    plugins: [typescript()],
   },
 ]
