@@ -1,0 +1,4 @@
+__test__/  
+.github/  
+.eslintrc.js
+.prettierrc
