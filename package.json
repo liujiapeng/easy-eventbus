@@ -1,6 +1,6 @@
 {
   "name": "tiny-eventbus",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "eventbus lib for typescript",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
