@@ -1,6 +1,6 @@
 {
-  "name": "easy-eventbus",
-  "version": "0.1.0",
+  "name": "tiny-eventbus",
+  "version": "0.1.1",
   "description": "eventbus lib for typescript",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -36,15 +36,7 @@
       "yarn lint"
     ]
   },
-  "dependencies": {
-    "@types/ms": "^0.7.31",
-    "rollup": "^2.44.0",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "ts-node": "^9.1.1",
-    "tslib": "^2.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.20.0",
     "@typescript-eslint/parser": "^4.20.0",
@@ -54,6 +46,13 @@
     "prettier": "^2.2.1",
     "rimraf": "^3.0.2",
     "rollup-plugin-typescript2": "^0.30.0",
-    "typescript": "^4.2.3"
+    "typescript": "^4.2.3",
+    "@types/ms": "^0.7.31",
+    "rollup": "^2.44.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "ts-node": "^9.1.1",
+    "tslib": "^2.1.0"
   }
 }
